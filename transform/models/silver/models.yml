@@ -1,0 +1,18 @@
+models:
+  - name: ta_types
+    description: "Type of pricing"
+    columns:
+      - name: ta_type_id
+        description: "Surrogate key for ta_type"
+        data_tests:
+          - not_null
+          - unique
+  - name: parks
+    description: "Parking"
+    columns:
+      - name: park_id
+        description: "park id from source"
+        data_tests:
+          - not_null
+          - unique
+          
